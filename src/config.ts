@@ -9,7 +9,7 @@ import { LinkPreset } from './types/config'
 export const siteConfig: SiteConfig = {
   title: 'Alyx.pink',
   subtitle: '',
-  lang: 'fr',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+  lang: 'en',         // 'en', 'fr'
   themeColor: {
     hue: 340,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
     fixed: false,     // Hide the theme color picker for visitors
@@ -48,7 +48,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Alyx B.',
-  bio: 'Messing up with computers since I was a kid. Mostly self-taught. Ex-Senior Infrastructure Engineeer @ Docker Inc. Spent 8y building a good chunk of the tech part of a 75M+ EUR annual revenue French startup. I love Go. Fascinated by "AI" and "ML". Currently working on a few side projects.',
+  bio: 'Messing up with computers since I was a kid. Mostly self-taught. Ex-Senior Infrastructure Engineeer @ Docker Inc. Spent 8y building a good chunk of the tech side of a 75M+ EUR annual revenue French startup. I love Go. Fascinated by AI/LLM stuff.',
   links: [
     // Visit https://icones.js.org/ for icon codes
     // You will need to install the corresponding icon set if it's not already included
