@@ -1,7 +1,7 @@
 ---
-title: 2025-04-23-use-1password-with-halloy-irc-client
+title: "How to use 1Password to authenticate to your favorite IRC server"
 published: 2025-04-23
-description: "How to use 1Password to authenticate to your favorite IRC server"
+description: "Learn how to use 1Password to securely authenticate to your favorite IRC server using the Halloy IRC client."
 image: ""
 tags: [IRC, Halloy, 1Password, Security]
 category: ""
