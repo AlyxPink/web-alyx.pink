@@ -53,8 +53,8 @@ sasl.plain.username = "<username>"
 sasl.plain.password_command = "op read op://<vault>/<uuid>/<field-name>"
 ```
 
-3. Save the configuration file.
-4. Restart the Halloy IRC client.
+4. Save the configuration file.
+5. Restart the Halloy IRC client.
 
 ## Step 3: Connect to the IRC server
 
