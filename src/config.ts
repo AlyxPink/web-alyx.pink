@@ -47,8 +47,8 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'Alyx B.',
-  bio: 'Messing up with computers since I was a kid. Mostly self-taught. Ex-Senior Infrastructure Engineeer @ Docker Inc. Spent 8y building a good chunk of the tech side of a 75M+ EUR annual revenue French startup. I love Go. Fascinated by AI/LLM stuff.',
+  name: 'Alyx',
+  bio: 'Professional engineer for 11 years. Self-taught. Ex-Senior Infra Engineer @ Docker Inc. Love Go and AI/LLM stuff.',
   links: [
     // Visit https://icones.js.org/ for icon codes
     // You will need to install the corresponding icon set if it's not already included
