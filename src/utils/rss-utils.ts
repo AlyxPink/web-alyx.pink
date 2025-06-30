@@ -13,7 +13,7 @@ export async function generateRSSFeed(context: APIContext) {
   return rss({
     title: siteConfig.title,
     description: siteConfig.subtitle || 'No description',
-    site: context.site ?? 'https://astro.alyx.pink',
+    site: context.site ?? 'https://alyx.pink',
     items: blog.map(post => {
       return {
         title: post.data.title,
