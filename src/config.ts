@@ -66,7 +66,7 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'LinkedIn',
       icon: 'fa6-brands:linkedin-in',
-      url: 'https://www.linkedin.com/in/alyx-practice/',
+      url: 'https://www.linkedin.com/in/alyx-pink/',
     },
     {
       name: 'Email',
