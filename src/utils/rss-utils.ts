@@ -7,7 +7,7 @@ import sanitizeHtml from 'sanitize-html'
 
 const parser = new MarkdownIt()
 
-export async function generateRSSFeed(context: APIContext) {
+export async function generateRSSFeed(context: APIContext): Promise<Response> {
   const blog = await getSortedPosts()
 
   return rss({
