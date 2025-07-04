@@ -2,8 +2,6 @@
 
 # Hi, I'm Alyx! 👋 🏳️‍🌈 🏳️‍⚧️
 
-<img src="https://blog.alyx.pink/content/images/2023/12/1--1--1.jpeg" align="right" alt="Me, lying down in the grass, with a black cap and a white shirt. My arm is behind my head. It's a sunny day." width="25%">
-
 Born in the 90's, I work in the tech industry since 2014.
 
 After being a Ruby on Rails Engineer early in my career, and then going on the SysOps side of things full-time, I'm now a Senior Infrastructure Engineer working for an American tech company.
@@ -21,22 +19,22 @@ Since then, I've been fascinated by how computers work. I've started playing vid
 # 🤗 Hobbies & Interests
 
 **🧑‍💻 Programming**:
-I enjoy coding, it's relaxing outside of work. Currently, I'm learning more about Golang and having a great time with it.
+I enjoy coding, it's relaxing outside of work. Currently, I'm learning more about Go. I write quite a few projects, learning new things from each of them. I love building nice TUI thanks to [charmbracelet](https://github.com/charmbracelet/) libraries.
 
 **🎶 Music**:
 I've started making music with Korg Volca synths. It's a new adventure for me, not an easy one but again, it's all about enjoying what you are doing 😊
 
 **👾 Gaming**:
-Minecraft has been my favorite game since 2010. Overwatch is another game I play a lot, enjoying all roles.
+I'm currently invested in Guild Wars 2, there is so many things to do. I love just going around their world, gathering resources, doing events, and helping people. It can be stimulating if I want to, or it can be relaxing. It always fits my mood.
 
-**🔈 Hi-Fi enjoyer (but not an elitist one)**:
+**🔈 Hi-Fi**:
 I appreciate good sound quality in music and movies and have invested in some nice speakers for that. I love to share them with my friends, it's always an amazing feeling to see their face smiling while listening to one of their favorite song or album and discovering the tracks again. I'm really glad I can share that.
 
 **☕️ 🫖Coffee & Tea**:
 Coffee starts my day, made with my trusty Jura machine. Sometimes, I switch to black tea for a change, [Mariage Frères](https://www.mariagefreres.com) have such a great selection.
 
 **💃 Techno Music & Clubbing**:
-I found out very late in my life that all of this scene existed. And it felt like I was waiting for that all my life. It's a place where I can dance freely, be myself, dress however I want, and forget everything else. I met a lot of nice people there. It feels like it's the only [third-place](https://en.wikipedia.org/wiki/Third_place) where I can go to and socialize.
+I found out very late in my life that all of this scene existed. And it felt like I was waiting for that all my life. I already was into electronic music, but I fell in love with this sub-genre. It's a place where I can dance freely, be myself, dress however I want, and forget everything else. It's my [third-place](https://en.wikipedia.org/wiki/Third_place).
 
 # 🧰 Some of my projects
 
