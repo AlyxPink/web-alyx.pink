@@ -23,13 +23,25 @@ Create a GitHub repository card with the code `::github{repo="<owner>/<repo>"}`.
 ::github{repo="saicaca/fuwari"}
 ```
 
+### Organization
+
+You can create cards for GitHub organizations by providing just the organization name:
+
+::github{repo="3615-computer"}
+
+Create a GitHub organization card with the code `::github{repo="<organization>"}`.
+
+```markdown
+::github{repo="3615-computer"}
+```
+
 ### Gist
 
 You can do the same with gists, and it works the same way:
 
 ::github{gist="44dc3d4d72d520a344a316de3a109eca"}
 
-```
+```markdown
 ::github{gist="44dc3d4d72d520a344a316de3a109eca"}
 ```
 

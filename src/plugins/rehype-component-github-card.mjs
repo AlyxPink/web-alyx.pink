@@ -16,22 +16,24 @@ export function GithubCardComponent(properties, children) {
       'Invalid directive. ("github" directive must be leaf type "::github{repo="owner/repo"}" or "::github{gist="gist-id"}")',
     ])
 
-  // Check if we have either repo or gist property
-  const hasRepo = properties.repo && properties.repo.includes('/')
+  // Check if we have repo (with / for repository, without for organization), or gist property
+  const hasRepo = properties.repo?.includes('/')
+  const hasOrg = properties.repo && !properties.repo.includes('/')
   const hasGist = properties.gist && properties.gist.trim() !== ''
 
-  if (!hasRepo && !hasGist)
+  if (!hasRepo && !hasOrg && !hasGist)
     return h(
       'div',
       { class: 'hidden' },
-      'Invalid GitHub reference. ("repo" attribute must be in the format "owner/repo" or "gist" attribute must be provided)',
+      'Invalid GitHub reference. ("repo" attribute must be in the format "owner/repo" for repositories or "org" for organizations, or "gist" attribute must be provided)',
     )
 
-  if (hasRepo && hasGist)
+  const optionsCount = [hasRepo, hasOrg, hasGist].filter(Boolean).length
+  if (optionsCount > 1)
     return h(
       'div',
       { class: 'hidden' },
-      'Invalid GitHub reference. (provide either "repo" or "gist" attribute, not both)',
+      'Invalid GitHub reference. (provide either "repo" for repository, organization name, or "gist" attribute, not multiple)',
     )
 
   // Handle repository cards
@@ -116,6 +118,91 @@ export function GithubCardComponent(properties, children) {
           nLicense,
           nLanguage,
         ]),
+        nScript,
+      ],
+    )
+  }
+
+  // Handle organization cards
+  if (hasOrg) {
+    const org = properties.repo
+    const cardUuid = `GC${Math.random().toString(36).slice(-6)}` // Collisions are not important
+
+    const nAvatar = h(`div#${cardUuid}-avatar`, { class: 'gc-avatar' })
+
+    const nTitle = h('div', { class: 'gc-titlebar' }, [
+      h('div', { class: 'gc-titlebar-left' }, [
+        h('div', { class: 'gc-owner' }, [
+          nAvatar,
+          h('div', { class: 'gc-user' }, org),
+        ]),
+      ]),
+      h('div', { class: 'github-logo' }),
+    ])
+
+    const nDescription = h(
+      `div#${cardUuid}-description`,
+      { class: 'gc-description' },
+      'Waiting for api.github.com...',
+    )
+
+    const nRepos = h(`div#${cardUuid}-repos`, { class: 'gc-stars' }, '0')
+    const nFollowers = h(
+      `div#${cardUuid}-followers`,
+      { class: 'gc-forks' },
+      '0',
+    )
+    const nLocation = h(
+      `div#${cardUuid}-location`,
+      { class: 'gc-license' },
+      'N/A',
+    )
+
+    const nScript = h(
+      `script#${cardUuid}-script`,
+      { type: 'text/javascript', defer: true },
+      `
+        fetch('https://api.github.com/orgs/${org}', { referrerPolicy: "no-referrer" }).then(response => response.json()).then(data => {
+          if (data.description) {
+            document.getElementById('${cardUuid}-description').innerText = data.description.replace(/:[a-zA-Z0-9_]+:/g, '');
+          } else {
+            document.getElementById('${cardUuid}-description').innerText = "Description not set"
+          }
+          document.getElementById('${cardUuid}-repos').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.public_repos || 0).replaceAll("\\u202f", '');
+          document.getElementById('${cardUuid}-followers').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.followers || 0).replaceAll("\\u202f", '');
+
+          const avatarEl = document.getElementById('${cardUuid}-avatar');
+          avatarEl.style.backgroundImage = 'url(' + data.avatar_url + ')';
+          avatarEl.style.backgroundColor = 'transparent';
+
+          if (data.location) {
+            document.getElementById('${cardUuid}-location').innerText = data.location;
+          } else {
+            document.getElementById('${cardUuid}-location').innerText = "No location"
+          }
+
+          document.getElementById('${cardUuid}-card').classList.remove("fetch-waiting");
+          console.log("[GITHUB-ORG] Loaded card for ${org} | ${cardUuid}.");
+        }).catch(err => {
+          const c = document.getElementById('${cardUuid}-card');
+          c.classList.add("fetch-error");
+          console.warn("[GITHUB-ORG] (Error) Loading card for ${org} | ${cardUuid}.");
+        })
+      `,
+    )
+
+    return h(
+      `a#${cardUuid}-card`,
+      {
+        class: 'card-github fetch-waiting no-styling',
+        href: `https://github.com/${org}`,
+        target: '_blank',
+        org,
+      },
+      [
+        nTitle,
+        nDescription,
+        h('div', { class: 'gc-infobar' }, [nRepos, nFollowers, nLocation]),
         nScript,
       ],
     )
