@@ -12,7 +12,7 @@ Hey everyone,
 
 I've launched [3615.computer](https://3615.computer), my new umbrella for software projects. The name's a nod to those funny little [Minitel](https://en.wikipedia.org/wiki/Minitel) "computers" we had at home in France—our own internet before the internet, where you'd dial "3615" for services over the landline.
 
-::github{repo="3615-computer"}
+::github{org="3615-computer"}
 
 Right now, I'm focusing on two main projects that solve very different problems I care about.
 
