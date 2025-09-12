@@ -49,11 +49,6 @@ export function GithubOrgCardComponent(properties, children) {
     { class: 'gc-forks' },
     '0',
   )
-  const nLocation = h(
-    `div#${cardUuid}-location`,
-    { class: 'gc-license' },
-    'N/A',
-  )
 
   const nScript = h(
     `script#${cardUuid}-script`,
@@ -72,11 +67,6 @@ export function GithubOrgCardComponent(properties, children) {
         avatarEl.style.backgroundImage = 'url(' + data.avatar_url + ')';
         avatarEl.style.backgroundColor = 'transparent';
 
-        if (data.location) {
-          document.getElementById('${cardUuid}-location').innerText = data.location;
-        } else {
-          document.getElementById('${cardUuid}-location').innerText = "No location"
-        }
 
         document.getElementById('${cardUuid}-card').classList.remove("fetch-waiting");
         console.log("[GITHUB-ORG] Loaded card for ${org} | ${cardUuid}.");
@@ -99,7 +89,7 @@ export function GithubOrgCardComponent(properties, children) {
     [
       nTitle,
       nDescription,
-      h('div', { class: 'gc-infobar' }, [nRepos, nFollowers, nLocation]),
+      h('div', { class: 'gc-infobar' }, [nRepos, nFollowers]),
       nScript,
     ],
   )
