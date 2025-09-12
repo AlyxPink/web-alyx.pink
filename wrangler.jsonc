@@ -1,0 +1,9 @@
+{
+	// Cloudflare Workers configuration for alyx.pink
+	"name": "web-alyx-pink",
+	"compatibility_date": "2025-01-25",
+	// Assets-only configuration - no main worker script needed
+	"assets": {
+		"directory": "./dist"
+	}
+}
