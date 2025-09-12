@@ -1,6 +1,24 @@
 # 🧰 My Projects
 
-I enjoy starting new projects, though finishing them is my biggest challenge. Check out my pinned repositories and the organization I'm part of to see how many unfinished projects I have 😭.
+I have a bunch of project on the side, for fun, for staying creative, for learning new things, or for solving real problems. It's not always finished, polished, and never done for sure, but I love them and I love sharing them.
+
+## [💾 3615.computer](https://3615.computer/)
+
+### Smart Software, Fair Pricing for Growing Businesses
+
+<img src="https://3615.computer/assets/images/card.jpg" />
+
+<ul>
+  <li><b><a href="https://workunit.app/">Workunit:</a></b> AI-powered project management that understands context, enables collaboration, and grows with your team.</li>
+  <li><b><a href="https://aeronef.app/">Aeronef:</a></b> Your ultimate Guild Wars 2 companion app, with powerful tools for item search, upscale icons, trading post analysis, and account management.</li>
+</ul>
+
+<p>Transparent, usage-based pricing that respects your budget and your intelligence.</p>
+
+<p>
+  I've been quietly working on something new, an umbrella company called 3615.computer to house my software projects. Workunit is our main product, focusing on AI-powered project management. Aeronef is a fun side project for Guild Wars 2 enthusiasts. It's a big step, and I'm excited to see where this journey takes us!
+  See the announcement: <a href="/posts/2025-09-12-a-new-chapter/">A new chapter: 3615.computer</a>
+</p>
 
 ## [📸 Minecraft Screenshot Bot](https://github.com/AlyxPink/minecraft-screenshot-bot)
 
@@ -54,7 +72,7 @@ Check out [some examples of screenshots](https://github.com/AlyxPink/minecraft-s
 <p>Just a quick script I made that you might have to adapt for your situation, if you want to update any commits you made on all your projects, to remove your deadname and/or old email address.</p>
 
 <ul>
-  <li>Map your name and email address with your old ones so you can replace them easily</span>
+  <li>Map your name and email address with your old ones so you can replace them easily</li>
   <li>Update all your commits</li>
   <li>Sign them again</li>
   <li>and add a new remote to your repositories.</li>
