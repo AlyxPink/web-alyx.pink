@@ -27,12 +27,12 @@ Create a GitHub repository card with the code `::github{repo="<owner>/<repo>"}`.
 
 You can create cards for GitHub organizations by providing just the organization name:
 
-::github{repo="3615-computer"}
+::github{org="3615-computer"}
 
-Create a GitHub organization card with the code `::github{repo="<organization>"}`.
+Create a GitHub organization card with the code `::github{org="<organization>"}`.
 
 ```markdown
-::github{repo="3615-computer"}
+::github{org="3615-computer"}
 ```
 
 ### Gist
