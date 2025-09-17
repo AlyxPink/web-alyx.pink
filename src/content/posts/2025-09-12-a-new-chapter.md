@@ -2,7 +2,7 @@
 title: "A new chapter: 3615.computer"
 published: 2025-09-12
 description: "Announcing 3615.computer, my new umbrella company for Workunit and Aeronef."
-image: ''
+image: 'https://slink.alyx.pink/image/fdb27a0a-b509-4cb8-8c6e-7bbe1c2e7158.jpg'
 tags: ["announcement", "company", "workunit", "aeronef", "3615.computer"]
 category: 'Announcements'
 draft: false

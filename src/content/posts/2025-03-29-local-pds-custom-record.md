@@ -2,7 +2,7 @@
 title: Running a local PDS in dev mode and create a custom record
 published: 2025-03-29
 description: "Messing around with ATProto and Personal Data Server (PDS)"
-image: ''
+image: 'https://slink.alyx.pink/image/b088f0eb-a908-4204-9ca2-09f58f20ab72.png'
 tags: [Bluesky, ATProto, PDS]
 category: 'Computer'
 draft: false
