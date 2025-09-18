@@ -2,11 +2,13 @@
 title: "Cloudflare's Bold Documentation: Just Let the AI Do It"
 published: 2025-09-12
 description: "Cloudflare's migration docs casually suggest letting an LLM handle your entire project migration. And you know what? It actually works."
-image: ''
+image: 'https://slink.alyx.pink/image/e39c3fff-c8f1-4c35-8df3-cd0faa7ee7e5.jpg'
 tags: ["cloudflare", "ai", "migration", "documentation", "llm", "automation"]
 category: 'Development'
 draft: false
 ---
+
+*Picture from [Sharad Bhat](https://unsplash.com/fr/@sharadmbhat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/fr/photos/un-grand-nuage-orange-dans-un-ciel-sombre-_Z0JGI6FGlA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)*
 
 I stumbled across something fascinating in Cloudflare's documentation recently—something that made me do a double-take and then immediately try it out.
 
