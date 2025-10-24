@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
   banner: {
     enable: true,
     src: "assets/images/banner.svg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+    position: "top", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: true, // Display the credit text of the banner image
       text: 'A girl walks towards the night sky by "ands//picociko"',
