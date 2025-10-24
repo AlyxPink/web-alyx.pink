@@ -20,6 +20,28 @@ I have a bunch of project on the side, for fun, for staying creative, for learni
   See the announcement: <a href="/posts/2025-09-12-a-new-chapter/">A new chapter: 3615.computer</a>
 </p>
 
+## [🔗 Workunit](https://workunit.app/)
+
+### The missing context layer for working with AI
+
+<img src="https://slink.alyx.pink/image/3a3982cd-661e-4a6b-96e8-f459c17b0bdb.png" />
+
+<ul>
+  <li><b>Universal Context Layer:</b> Share context across Claude, GPT, Gemini, and any AI model that supports MCP</li>
+  <li><b>No More Context Loss:</b> Stop explaining the same things over and over as conversations get compressed</li>
+  <li><b>Assets & Context Graph:</b> LLMs can create, search, and update your project's knowledge, systems, and documentation</li>
+  <li><b>Team Collaboration:</b> Work together with humans and AI from a shared source of truth</li>
+  <li><b>MCP Integration:</b> Works with any MCP-compatible tool - Claude Code, Gemini CLI, and more</li>
+</ul>
+
+<p>
+  I built Workunit to solve a problem I kept hitting: AI models losing context, no way to share work between different LLMs, and teams having scattered conversations across tools. It's a context and memory layer that sits between you and any AI model, making collaboration seamless.
+</p>
+
+<p>
+  Currently in beta and completely free while I refine things. Read more: <a href="/posts/2025-10-24-workunit-missing-context-layer-for-ai/">Workunit: The missing context layer for working with AI</a>
+</p>
+
 ## [📸 Minecraft Screenshot Bot](https://github.com/AlyxPink/minecraft-screenshot-bot)
 
 ### A project I had in my mind and I had no idea how to create until it clicked!
