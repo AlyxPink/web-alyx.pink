@@ -41,7 +41,12 @@ const projectsCollection: ReturnType<typeof defineCollection> = defineCollection
   }),
 })
 
-export const collections: { posts: typeof postsCollection, projects: typeof projectsCollection } = {
+const specCollection: ReturnType<typeof defineCollection> = defineCollection({
+  type: 'content',
+})
+
+export const collections: { posts: typeof postsCollection, projects: typeof projectsCollection, spec: typeof specCollection } = {
   posts: postsCollection,
   projects: projectsCollection,
+  spec: specCollection,
 }
