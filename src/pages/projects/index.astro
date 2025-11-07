@@ -1,0 +1,42 @@
+---
+import MainGridLayout from '../../layouts/MainGridLayout.astro'
+import ProjectCard from '@components/ProjectCard.astro'
+import I18nKey from '../../i18n/i18nKey'
+import { i18n } from '../../i18n/translation'
+import { getCollection } from 'astro:content'
+
+// Get all projects and sort by order
+const projects = (await getCollection('projects')).sort((a, b) => {
+  return a.data.order - b.data.order
+})
+---
+
+<MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative">
+        <div class="card-base z-10 px-6 md:px-9 py-6 relative w-full">
+            <h1 class="text-4xl font-bold mb-3 text-90">🧰 {i18n(I18nKey.projects)}</h1>
+            <p class="text-75 mb-6">
+                I have a bunch of project on the side, for fun, for staying creative, for learning new things, or for solving real problems. It's not always finished, polished, and never done for sure, but I love them and I love sharing them.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-4 mt-4">
+        {projects.map((project, i) => {
+            const className = 'onload-animation'
+            return (
+                <ProjectCard
+                    title={project.data.title}
+                    emoji={project.data.emoji}
+                    url={`/projects/${project.slug}/`}
+                    tags={project.data.tags}
+                    image={project.data.image}
+                    description={project.data.description}
+                    featured={project.data.featured}
+                    class={className}
+                    style={`animation-delay: calc(var(--content-delay) + ${i * 50}ms);`}
+                />
+            )
+        })}
+    </div>
+</MainGridLayout>

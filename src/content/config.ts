@@ -19,6 +19,29 @@ const postsCollection: ReturnType<typeof defineCollection> = defineCollection({
     nextSlug: z.string().default(''),
   }),
 })
-export const collections: { posts: typeof postsCollection } = {
+
+const projectsCollection: ReturnType<typeof defineCollection> = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    emoji: z.string().optional().default(''),
+    description: z.string(),
+    image: z.string().optional().default(''),
+    tags: z.array(z.string()).optional().default([]),
+    links: z.array(z.object({
+      name: z.string(),
+      url: z.string(),
+    })).optional().default([]),
+    github: z.object({
+      repo: z.string().optional(),
+      org: z.string().optional(),
+      gist: z.string().optional(),
+    }).optional(),
+    featured: z.boolean().optional().default(false),
+    order: z.number().optional().default(999),
+  }),
+})
+
+export const collections: { posts: typeof postsCollection, projects: typeof projectsCollection } = {
   posts: postsCollection,
+  projects: projectsCollection,
 }
