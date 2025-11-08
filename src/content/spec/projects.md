@@ -98,18 +98,6 @@ Check out [some examples of screenshots](https://github.com/AlyxPink/minecraft-s
   <li>Share Meowments with your friends. It could be a memory, a collection of your favorite moments during a trip, anything that is part of you and you'd love to share.</li>
 </ul>
 
-## [🌃 Void Mesh](https://github.com/VoidMesh)
-<h3>🎮 First-ever idle game on the Fediverse powered by ActivityPub!</h3>
-
-<img src="https://github.com/AlyxPink/AlyxPink/assets/152620834/7ae0200c-9606-4d7c-8a3b-27a02cede080">
-<ul>
-    <li><b>Idle Gameplay:</b> Enjoy the game at your pace, perfect for casual play.</li>
-    <li><b>Open Source:</b> Dive into the code, contribute, or fork it to create your own version.</li>
-    <li><b>Community-Driven:</b> Built on ActivityPub to enhance interaction and collaboration.</li>
-    <li><b>Cross-Platform:</b> Play on any device, anywhere, seamlessly.</li>
-</ul>
-<p>A very amibitious project, I've been iterating on drafts to refine the idea, to find a balance between a fun game and how to use ActivityPub for good reasons, not just a gimmick. Nothing is set in stone yet, but I'm excited to see where this goes!</p>
-
 ## [🐳 Docker Hub CLI](https://github.com/AlyxPink/docker-hub-cli)
 
 <img src="https://user-images.githubusercontent.com/2109178/180596993-6b6638d8-6dfb-4a84-9bc8-172f282e8af3.png">
