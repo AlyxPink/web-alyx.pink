@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/3a3982cd-661e-4a6b-96e8-f459c17b0bdb.png'
 tags: ["ai", "productivity", "tools", "workunit", "context", "llm"]
 category: 'AI'
 draft: false
+lang: "en"
 ---
 
 Hey everyone,

@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/7e36c360-7a69-4b11-acbd-9d4950059beb.png'
 tags: ["tools", "privacy", "self-hosted", "images"]
 category: 'Tools'
 draft: false
+lang: "en"
 ---
 
 Hey everyone,

@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/c0712389-2d13-4434-ae82-593e28ae29a5.jpg'
 tags: ["fish", "shell", "macos", "homebrew", "tips"]
 category: 'Tips'
 draft: false
+lang: "en"
 ---
 
 *Picture from [Andras Vas](https://unsplash.com/fr/@wasdrew?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/fr/photos/macbook-pro-turned-on-Bd7gNnWJBkU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)*

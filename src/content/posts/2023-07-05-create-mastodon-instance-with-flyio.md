@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/a259499b-6460-4b7a-a0c0-0fe9545fa3df.jpg'
 tags: ["mastodon", "fly-io", "cloudflare", "docker", "self-hosting"]
 category: 'Tutorial'
 draft: false
+lang: "en"
 ---
 
 *Photo by [frame harirak](https://unsplash.com/@framemily?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)*

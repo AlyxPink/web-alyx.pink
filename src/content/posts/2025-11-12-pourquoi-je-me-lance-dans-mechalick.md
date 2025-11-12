@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/936c9814-800a-408d-ab2d-c59e499e2daa.png'
 tags: ["claviers", "mécanique", "entrepreneuriat", "france", "mechalick"]
 category: 'Projets'
 draft: false
+lang: "fr"
 ---
 
 Salut à tous,

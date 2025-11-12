@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/e39c3fff-c8f1-4c35-8df3-cd0faa7ee7e5.jpg'
 tags: ["cloudflare", "ai", "migration", "documentation", "llm", "automation"]
 category: 'Development'
 draft: false
+lang: "en"
 ---
 
 *Picture from [Sharad Bhat](https://unsplash.com/fr/@sharadmbhat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/fr/photos/un-grand-nuage-orange-dans-un-ciel-sombre-_Z0JGI6FGlA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)*

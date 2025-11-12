@@ -9,8 +9,9 @@ interface Props {
   keyword?: string
   tags?: string[]
   categories?: string[]
+  languages?: string[]
 }
-const { keyword, tags, categories } = Astro.props
+const { keyword, tags, categories, languages } = Astro.props
 
 let posts = await getSortedPosts()
 
@@ -27,6 +28,15 @@ if (Array.isArray(categories) && categories.length > 0) {
     post =>
       (post.data.category && categories.includes(post.data.category)) ||
       (!post.data.category && categories.includes(UNCATEGORIZED)),
+  )
+}
+
+if (Array.isArray(languages) && languages.length > 0) {
+  posts = posts.filter(
+    post => {
+      const postLang = post.data.lang || 'en'
+      return languages.includes(postLang)
+    }
   )
 }
 

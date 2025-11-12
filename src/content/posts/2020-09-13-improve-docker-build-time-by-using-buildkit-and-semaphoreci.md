@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/4655c526-199a-463b-84de-bf627b56ddec.jpg'
 tags: ['docker', 'buildkit', 'semaphoreci', 'cicd', 'devops']
 category: 'DevOps'
 draft: false
+lang: "en"
 ---
 
 ## Context

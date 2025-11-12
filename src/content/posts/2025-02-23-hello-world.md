@@ -6,6 +6,7 @@ image: ''
 tags: []
 category: 'Announcements'
 draft: false
+lang: "en"
 ---
 
 **Hello, World!**

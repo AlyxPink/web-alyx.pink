@@ -87,3 +87,37 @@ export async function getCategoryList(): Promise<Category[]> {
   }
   return ret
 }
+
+export type Language = {
+  name: string
+  count: number
+}
+
+export async function getLanguageList(): Promise<Language[]> {
+  const allBlogPosts = await getCollection<'posts'>('posts', ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true
+  })
+  const count: { [key: string]: number } = {}
+  allBlogPosts.map((post: { data: { lang?: string } }) => {
+    const lang = post.data.lang || 'en'
+    count[lang] = count[lang] ? count[lang] + 1 : 1
+  })
+
+  const lst = Object.keys(count).sort((a, b) => {
+    return a.toLowerCase().localeCompare(b.toLowerCase())
+  })
+
+  const ret: Language[] = []
+  for (const lang of lst) {
+    ret.push({ name: lang, count: count[lang] })
+  }
+  return ret
+}
+
+export function getLanguageNativeName(langCode: string): string {
+  const languageNames: { [key: string]: string } = {
+    'en': 'English',
+    'fr': 'Français'
+  }
+  return languageNames[langCode] || langCode.toUpperCase()
+}

@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/b088f0eb-a908-4204-9ca2-09f58f20ab72.png'
 tags: [Bluesky, ATProto, PDS]
 category: 'Computer'
 draft: false
+lang: "en"
 ---
 
 I wanted to play around with ATProto and Personal Data Server (PDS). My goal was just to see how to write a record to the PDS, using a custom type. Here are some quick notes just in case it can help anyone, and so it does not get "lost".

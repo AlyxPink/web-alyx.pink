@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/fdb27a0a-b509-4cb8-8c6e-7bbe1c2e7158.jpg'
 tags: ["announcement", "company", "workunit", "aeronef", "3615.computer"]
 category: 'Announcements'
 draft: false
+lang: "en"
 ---
 
 Hey everyone,

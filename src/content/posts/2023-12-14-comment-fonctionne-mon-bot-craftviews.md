@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/9919ffab-5a2a-464e-bb4c-e83a3e1678e1.png'
 tags: ["minecraft", "bot", "golang", "automation", "mastodon", "screenshot"]
 category: 'Development'
 draft: false
+lang: "fr"
 ---
 
 ## Qu'est-ce que c'est ?

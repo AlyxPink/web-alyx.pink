@@ -6,6 +6,7 @@ image: 'https://slink.alyx.pink/image/f3955d6e-d13a-40db-9bcf-928c8e69b1a6.webp'
 tags: ["docker", "unraid", "nas", "hardware", "cloudflare"]
 category: 'Hardware'
 draft: false
+lang: "fr"
 ---
 
 J'ai depuis longtemps un NAS à la maison. Je ne sais plus vers quel âge, probablement vers 15 ans. J'avais récupéré des pièces d'une décheterie pour assembler mon premier serveur. Autant vous dire que les performances n'étaient pas au rendez-vous.

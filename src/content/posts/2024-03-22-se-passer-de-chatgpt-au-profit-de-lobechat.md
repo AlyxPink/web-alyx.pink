@@ -6,6 +6,7 @@ image: "https://slink.alyx.pink/image/2bf83a52-d0ab-424a-b020-adf636e4e769.webp"
 tags: ["ai", "chatgpt", "open-source", "docker", "api"]
 category: "AI"
 draft: false
+lang: "fr"
 ---
 
 J'ai récemment arrêté mon abonnement ChatGPT Plus et j'ai pu le remplacer par une simple souscription à leur API, me permettant de payer juste ce que j'utilise. Beaucoup moins cher, et proposant – selon moi – plus d'options que leur interface assez sommaire, sans pour autant ne plus pouvoir profiter de toutes les fonctionnalités que OpenAI propose.
