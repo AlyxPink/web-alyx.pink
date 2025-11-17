@@ -1,0 +1,445 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+
+const pageTitle = "Resume";
+const pageDescription =
+    "Former Senior Infrastructure Engineer @ Docker, Inc | Rails SWE, CTO and SysOps @ Selectra";
+---
+
+<MainGridLayout title={pageTitle} description={pageDescription}>
+    <div
+        class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative"
+    >
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <!-- Header -->
+            <div
+                class="mb-8 pb-6 border-b border-neutral-200 dark:border-neutral-700"
+            >
+                <h1 class="text-4xl font-bold mb-2 text-neutral-900 dark:text-neutral-100">Alyx Bersy</h1>
+                <p class="text-xl text-neutral-600 dark:text-neutral-400 mb-3">
+                    Former Senior Infrastructure Engineer @ Docker, Inc | Rails
+                    SWE, CTO and SysOps @ Selectra
+                </p>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">
+                    Roubaix, Hauts-de-France, France | Remote worker
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm text-neutral-700 dark:text-neutral-300">
+                    <a
+                        href="mailto:linkedin@alyx.pink"
+                        class="hover:text-[var(--primary)] transition-colors">hiring@alyx.pink</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/alyx-pink"
+                        target="_blank"
+                        class="hover:text-[var(--primary)] transition-colors">LinkedIn</a
+                    >
+                    <a
+                        href="https://github.com/AlyxPink"
+                        target="_blank"
+                        class="hover:text-[var(--primary)] transition-colors">GitHub</a
+                    >
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">Summary</h2>
+                <div
+                    class="text-neutral-700 dark:text-neutral-300 leading-relaxed space-y-3"
+                >
+                    <p>
+                        Self-taught engineer with 11+ years of professional
+                        experience. Eager to always learn more and more!
+                    </p>
+                    <p>
+                        As a proud former member of Docker, I dedicated myself
+                        to architecting and maintaining Kubernetes-based
+                        infrastructure that powered our products, including the
+                        famous "Docker Hub". This role involved automating CI/CD
+                        processes, rethinking parts of our existing
+                        infrastructure, security, being on-call, and
+                        collaborating with internal teams to support their
+                        application deployment needs.
+                    </p>
+                    <p>
+                        My work at Docker focused heavily on DevOps practices,
+                        utilizing tools like Terraform and AWS, as well as
+                        open-source solutions such as Grafana and Prometheus.
+                        Together, we built robust logging systems, metrics
+                        aggregators, tracing, and routing infrastructures that
+                        significantly enhanced engineering productivity,
+                        enabling rapid iteration from concept to deployment.
+                    </p>
+                    <p>
+                        While my primary role was on the infrastructure side, I
+                        also had the opportunity to work on a large internal
+                        project for about eight months. This project aimed to
+                        improve engineer productivity by building a platform
+                        that made deploying new applications as straightforward
+                        as possible, tracking their status, and providing
+                        out-of-the-box solutions. The project was written in Go
+                        and involved integrating with Terraform, AWS, our own
+                        API backend using gRPC and Protobuf, and creating a
+                        user-friendly CLI experience.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">Top Skills</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >Kubernetes</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >AWS</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >Terraform</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >Go</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >Docker</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >DevOps</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >PostgreSQL</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >Creative Problem Solving</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >Project Planning</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >Ruby on Rails</span
+                    >
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">Experience</h2>
+
+                <!-- Docker -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                                Senior Infrastructure Engineer
+                            </h3>
+                            <p class="text-neutral-600 dark:text-neutral-400">
+                                Docker, Inc
+                            </p>
+                        </div>
+                        <span class="text-sm text-neutral-500 dark:text-neutral-400"
+                            >Jun 2022 - Nov 2024</span
+                        >
+                    </div>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Remote</p>
+                    <ul
+                        class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 ml-4"
+                    >
+                        <li>
+                            Designed and implemented advanced architectures for
+                            logging systems, routing infrastructure, metrics
+                            aggregators, and tracing using Grafana stack and AWS
+                            services
+                        </li>
+                        <li>
+                            Managed on-call shifts every six weeks (7 days),
+                            covering all services including follow-ups and
+                            post-mortem analyses
+                        </li>
+                        <li>
+                            Automated infrastructure processes including CI/CD
+                            pipelines for multiple complex workflows, creating
+                            reusable GitHub Actions
+                        </li>
+                        <li>
+                            Served as liaison to engineers, monitoring Slack
+                            channels to identify needs and provide proactive
+                            support
+                        </li>
+                        <li>
+                            Contributed as Go Software Engineer to internal
+                            developer platform aimed at increasing engineer
+                            productivity
+                        </li>
+                        <li>
+                            Implemented changes reducing CI/CD deployment
+                            waiting time by up to 20%
+                        </li>
+                        <li>
+                            Maintained close collaboration with security team,
+                            actively participating in incident training and
+                            investigations
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Selectra - SysOps -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                                SysOps Engineer
+                            </h3>
+                            <p class="text-neutral-600 dark:text-neutral-400">
+                                Selectra
+                            </p>
+                        </div>
+                        <span class="text-sm text-neutral-500 dark:text-neutral-400"
+                            >Apr 2019 - May 2022</span
+                        >
+                    </div>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">France</p>
+                    <ul
+                        class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 ml-4"
+                    >
+                        <li>
+                            First SysOps Engineer, operated as "a team of one"
+                            with extensive documentation practices
+                        </li>
+                        <li>
+                            Created and managed Kubernetes clusters hosting ~50
+                            applications (Ruby, Rails, PHP, Laravel)
+                        </li>
+                        <li>
+                            Created and managed AWS RDS Aurora MySQL and
+                            PostgreSQL clusters
+                        </li>
+                        <li>
+                            Implemented monitoring with Datadog and UptimeRobot
+                        </li>
+                        <li>
+                            Added distributed tracing observability through
+                            Datadog APM
+                        </li>
+                        <li>
+                            Traced Docker CI builds through OpenTelemetry
+                            Collector to Datadog and Honeycomb
+                        </li>
+                        <li>
+                            Managed SSL certificates through Kubernetes
+                            Ingresses with cert-manager
+                        </li>
+                        <li>
+                            Deployed CI/CD pipelines on SemaphoreCI using
+                            Docker, BuildKit and Kubernetes
+                        </li>
+                        <li>Managed cloud architecture with Terraform Cloud</li>
+                        <li>Added security layer with oauth2-proxy</li>
+                        <li>
+                            Migrated to DynamoDB for cache and sessions storage
+                        </li>
+                        <li>
+                            Deployed GitHub Codespaces to improve engineer
+                            onboarding and experience
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Selectra - CTO -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                                CTO, Ruby & Rails Engineer, SysAdmin
+                            </h3>
+                            <p class="text-neutral-600 dark:text-neutral-400">
+                                Selectra
+                            </p>
+                        </div>
+                        <span class="text-sm text-neutral-500 dark:text-neutral-400"
+                            >May 2015 - Apr 2019</span
+                        >
+                    </div>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Paris, France</p>
+                    <ul
+                        class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 ml-4"
+                    >
+                        <li>Managed ~10 engineers (front-end and back-end)</li>
+                        <li>
+                            Improved hiring processes and managed engineer
+                            recruitment
+                        </li>
+                        <li>Shaped technical direction of the company</li>
+                        <li>
+                            Deployed runbook "How to Work At Selectra" with
+                            guidelines for distributed offices and remote
+                            workers
+                        </li>
+                        <li>
+                            Migrated ~50 monolith applications (PHP/Laravel/Ruby
+                            on Rails) from dedicated servers to cloud
+                            infrastructure
+                        </li>
+                        <li>
+                            Learned Kubernetes and AWS services to solve scaling
+                            issues during TV ads and high-traffic periods
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Selectra - Rails Engineer -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                                Ruby on Rails Engineer
+                            </h3>
+                            <p class="text-neutral-600 dark:text-neutral-400">
+                                Selectra
+                            </p>
+                        </div>
+                        <span class="text-sm text-neutral-500 dark:text-neutral-400"
+                            >Jun 2014 - May 2015</span
+                        >
+                    </div>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Paris, France</p>
+                    <ul
+                        class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 ml-4"
+                    >
+                        <li>
+                            Integrated Twilio, TalkDesk, New Voice Media and
+                            Zoho CRM APIs
+                        </li>
+                        <li>
+                            Created webhook applications for CRM integration and
+                            large marketing operations
+                        </li>
+                        <li>
+                            Built automated callback application for call
+                            centers (~40k callbacks/month)
+                        </li>
+                        <li>
+                            Created business monitoring for callback application
+                            to track sales generation
+                        </li>
+                        <li>
+                            Built group purchase operation platform with
+                            automated retargeting (12k subscribers in 5 weeks)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Early Career -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-2 text-neutral-900 dark:text-neutral-100">
+                        Early Career & Self-Teaching
+                    </h3>
+                    <div
+                        class="space-y-3 text-neutral-700 dark:text-neutral-300"
+                    >
+                        <div>
+                            <p class="font-medium">
+                                Junior Ruby on Rails Engineer (Self-teaching) -
+                                Apr 2014 - Jun 2014
+                            </p>
+                            <p class="text-sm ml-4">
+                                Created nextepisode.io for TV show tracking with
+                                unit tests and ~100% code coverage, deployed on
+                                AWS Elastic Beanstalk
+                            </p>
+                        </div>
+                        <div>
+                            <p class="font-medium">
+                                Junior Ruby Learner (Self-taught) - Oct 2013 -
+                                Jun 2014
+                            </p>
+                            <p class="text-sm ml-4">
+                                Created extensible bot with plugin system,
+                                automatic updates, and dependency management
+                            </p>
+                        </div>
+                        <div>
+                            <p class="font-medium">
+                                PHP Developer - ID Alizés - Jan 2013 - Mar 2013
+                            </p>
+                            <p class="text-sm ml-4">
+                                Worked with internal "GSite" framework, reworked
+                                users and companies directory system
+                            </p>
+                        </div>
+                        <div>
+                            <p class="font-medium">
+                                WordPress/Front-end Developer - Pillows Factory
+                                - May 2012 - Jul 2012
+                            </p>
+                            <p class="text-sm ml-4">
+                                Created themes and plugins for WordPress,
+                                learned Foundation CSS framework
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">Education</h2>
+                <div class="space-y-4 text-neutral-700 dark:text-neutral-300">
+                    <div>
+                        <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">Self-Taught</h3>
+                        <p class="text-neutral-600 dark:text-neutral-400">
+                            Computer Software Engineering (2013-2014)
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                            BTS Services Informatiques aux Organisations
+                        </h3>
+                        <p class="text-neutral-600 dark:text-neutral-400">
+                            Lycée de la CCI Privée de Nîmes (2011-2013)
+                        </p>
+                        <p class="text-sm">
+                            Solutions Logicielles et Applications Métiers (SLAM)
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                            Baccalauréat Sciences et Technologies de l'Ingénieur
+                        </h3>
+                        <p class="text-neutral-600 dark:text-neutral-400">
+                            Lycée Dhuoda (2009-2011)
+                        </p>
+                        <p class="text-sm">Spécialisation électronique</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Languages -->
+            <section>
+                <h2 class="text-2xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">Languages</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >French (Native)</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-200"
+                        >English (Full Professional)</span
+                    >
+                </div>
+            </section>
+        </div>
+    </div>
+</MainGridLayout>
